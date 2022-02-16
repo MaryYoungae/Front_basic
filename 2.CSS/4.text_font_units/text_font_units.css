@@ -1,0 +1,74 @@
+/* ,(콤마)를 통해 type 선택자 복수 선택 가능 */
+table, td, th {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    border-spacing: 10px;
+    margin: 0 auto;
+}
+
+tr, td {
+    /* 안쪽 영역 넓히기 */
+    padding: 10px;
+}
+
+.brower-color {
+    color: red;
+}
+
+.google-hex {
+    color: #a52a2a;
+    font-family: "Oswald", sans-serif;
+}
+
+.google-rgb {
+    color: rgb(0, 255, 0);
+    font-family: 'Fuzzy Bubbles', cirsive;
+}
+
+/* rgba의 a는 투명도 */
+.google-rgba {
+    color: rgba(0, 0, 255, 0.4);
+    font-family: 'Raleway', sans-serif;
+}
+
+.px-parent {
+    /* 변화없어 보이는 이유 */
+    /* google browser default px = 16px */
+    font-size: 16px;
+    font-family: 'Raleway';
+}
+
+.px-child {
+    /* 브라우저 개발자도구 -> 해당영역선택 -> Computed -> Filter - fontsize 10px
+    8px이 아닌 이유 : 해당 브라우저에서 최소로 설정할수 있는 px사이즈가 10px */
+    font-size: 50%;
+}
+
+/* em, rem 권장, px를 고정값이라서 */
+.em-parent {
+    /* 해당브라우저 기준 3배, 16px * 3 = 48px */
+    /* 만약
+    html {
+        font-size: 10px;
+    }
+    로 지정했다면 10px기준으로 적용, 10px * 3 = 30px
+    */
+    font-size: 3em;
+}
+
+.em-child {
+    /* 48px의 반, 48px * 0.5 = 24px */
+    font-size: 0.5em;
+}
+
+.rem-parent {
+    /* html요소 크기의 3배, 기본값 16px, 48px */
+    font-size: 3rem;
+}
+
+.rem-child {
+    /* html요소 크기의 0.5배, 기본값 16px이지만 최소 설정 단위 10px */
+    font-size: 0.5rem;
+}
+

@@ -1,0 +1,25 @@
+* {
+    /* 구글에서 가져온 'Playfair Display'사용, serif(바탕체): 만약 지정 폰트가 지원이 안되면 대체 글꼴
+    구글 -> 설정 -> 모양 -> 글꼴 맞춤설정 -> 기분으로 적용되는 글꼴 serif(바탕체), sans-serif(고딕체) */
+    font-family: 'Playfair Display',serif;
+}
+
+h2 {
+    color: slateblue;
+}
+
+.class-selector {
+    font-size: 30px;
+    /* border-style: dashed;
+    border-width: 10px;
+    border-color: firebrick; */
+    border: 2px dashed firebrick;
+}
+
+#id-selector {
+    font-size: 30px;
+    font-style: italic;
+    color: forestgreen;
+    font-weight: bold; 
+    /* 폰트 굵기, 숫자로도표기가능 100~900 , 보통굵기 400 default 값 */
+}

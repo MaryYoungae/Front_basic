@@ -1,0 +1,21 @@
+/* .width-default {
+    block에서 width를 100%가 아닌 70%로 쓰고 싶을때 */
+    /* width: 70%;
+} */
+
+/* 
+    브라우저 개발자 도구 확인
+    해당 클래스 클릭 -> styles 탭 확인
+    contents 영역 296
+    border 좌, 우 2, 2  
+*/
+.width-px {
+    width: 300px; 
+}
+
+/*
+    pixel과 다르게 고정적이지 않아서 페이지 크기 조절에 따라 변경됨
+*/
+.width-pct {
+    width: 50%;
+}

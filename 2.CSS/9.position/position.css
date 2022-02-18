@@ -1,0 +1,56 @@
+.boxes {
+    /* #box3과 연관성 */
+    position: relative;
+    background: honeydew;
+    border: 1px solid hotpink;
+    margin-top: 100px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: rgb(69, 103, 251);
+    border: 1px dashed hotpink;
+    font-size: 20px;
+    /* 상하 20px 좌우 화면크기에 맞게 auto로 조정(가운데 배치) */
+    margin: 20px auto;
+}
+
+#box1 {
+    /* default value */
+    position: static;
+}
+
+#box2 {
+    background: palegreen;
+
+    /* 자기자신의 위치 기준으로 이동, 혼자서는 잘 안쓰임 */
+    position: relative;
+    /* 자기자신의 위치 기준으로 위쪽으로 20px 추가 */
+    top: 20px;
+    /* 자기자신의 위치 기준으로 왼쪽으로 20px 추가 */
+    left: 20px;
+}
+
+#box3 {
+    background: sandybrown;
+
+    /* 
+        조상 기준(body기준) 으로 이동
+        .boxes { }에 position: relative; 두면 boxes 기준으로 이동
+        position: absolute;는 새로운 요소가 추가 되어도 정해진 위치에서 이동 없음
+        position: relative;는 새로운 요소가 추가 되면 위치가 아래로 밀려남 
+    */
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+#box4 {
+    background: tomato;
+
+    /* 스크롤을 움직여도 계속 따라옴 */
+    position: fixed;
+    top: 20px;
+    left: 40px;
+}

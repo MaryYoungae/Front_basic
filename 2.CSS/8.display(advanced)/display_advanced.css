@@ -1,0 +1,48 @@
+img {
+    /* 이미지 화면 조절에 맞게 크기 변화 */
+    width: 100%;
+}
+
+.card {
+    /* box-shadow: Offset X, Offset Y, Blur, Color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* hovering할때 적용 내용*/
+    transition: 0.3s;
+    /* 현 화면의 30% */
+    width: 30%;
+    border: 2px dashed grey;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* card 클래스에 마우스오버할때 적용 내용 */
+.card:hover {
+    box-shadow: 0 8px 16px rgba(255, 17, 0, 0.2);
+}
+
+
+/* card 클래스의 1번째 자식 선택자 */
+/* .card:nth-child(1) {
+    display: none;
+} */
+
+
+
+/* card 클래스의 2번째 자식 선택자  */
+/* .card:nth-child(2) {
+    display: none;
+} */
+
+/* card 클래스의 마지막에서 1번째 자식 선택자  */
+/* .card:nth-last-child(1) {
+    display: none;
+} */
+
+/* card 클래스의 짝수번째 자식 선택자 (홀수 odd) */
+.card:nth-child(even) {
+    display: none;
+}
+
+.container {
+    padding: 2px 16px; /* 상하, 좌우 */
+}
